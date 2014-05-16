@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="{PATH}/js/scripts.js"></script>
+<script type="text/javascript" src="public/js/general.js"></script>
+
+<div style="width:100%; height:100%;" id="hst_main">
+
+          
+      <table cellpadding="0" cellspacing="0" border="0" class="display" id="hst_table">
+        <thead>
+        <tr>
+        <th colspan="5"><div style="width:90%; float:left;">
+          <h3>Historias</h3></div>
+        <div style="width:9%;  float:right;"><button class="boton" id="hst_add" onClick="hst_abrir_formulario(0,1)">Nuevo</button></div></th>
+        </tr>
+        <tr>
+          <th></th>	
+          <th></th>	
+          <th>Título</th>
+          <th>Usuario</th>
+          <th>Fecha</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+          </tr>
+        </tbody>
+      </table> 
+
+</div>
+
+<div id="hst_dialog_formu"></div>
+<div id="hst_dialog_confirm"></div> 

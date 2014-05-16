@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="public/js/general.js"></script>
+
+
+<form id="hst_form" name="hst_form" enctype="multipart/form-data" method="post" action="index.php?m=mHistoria&c=mSave" target="hst_trg">
+<input type="hidden" id="hst_hop" name="hst_hop" value="{OP}" />
+<input type="hidden" id="hst_hid" name="hst_hid" value="{ID}" />
+<input type="hidden" name="host" value="{HOST}" />
+<input type="hidden" name="user" value="{USER}" />
+<input type="hidden" name="pass" value="{PASS}" />
+<input type="hidden" name="db" value="{DB}" />
+<div id="hst_tabs1">
+<table>
+<tr>
+<td><label>Título:</label></td>
+<td><textarea id="hst_ttl" name="hst_ttl" class="ui-corner-all" rows="5">{TTL}</textarea></td>
+</tr>
+<tr>
+<td><label>Texto:</label></td>
+<td><textarea id="hst_txt" name="hst_txt" class="ui-corner-all" rows="5">{TXT}</textarea></td>
+</tr>
+<tr>
+<td><label>imagen:</label></td>
+<td><input type="file" id="hst_img" name="hst_img" class="caja_txt" accept="image/*" /></td>
+</tr>
+<tr>
+<td><label>Fecha:</label></td>
+<td><input type="text" id="datepicker" name="datepicker" class="caja_txt" readonly="readonly" value="{DTE}"/></td>
+</tr>
+</table>
+</div><!--hst_tabs1-->
+<!--hst_tabs2-->
+<!--hst_tabs3-->
+<!--hst_tabs4-->
+<!--hst_tabs5-->
+<!--hst_tabs6-->
+
+</form>
+<iframe name="hst_trg" id="hst_trg" style="display:none; height:350px; width:350px;"></iframe>
+
+<script>
+$(document).ready(function () {
+	
+	gral_btn_add();
+	//datepicker
+	$( "#datepicker" ).datepicker({
+      showOn: "button",
+      buttonImage: "public/images/cal.gif",
+      buttonImageOnly: true,
+	  maxDate:0,
+	  dateFormat: 'yy-mm-dd'
+    });
+	
+
+	});
+</script>
+<style>
+textarea{height:60px; width:500px; border:#aaaaaa solid thin; padding:2px;}
+</style>
